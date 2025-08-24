@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REC Inspections - Your Trusted Home Inspector</title>
+    <!-- Use the Inter font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Load Tailwind CSS from CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc;
+        }
+
+        /* Custom scrollbar for a smoother look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #e2e8f0;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #94a3b8;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #64748b;
+        }
+
+        /* Smooth scroll effect for internal links */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-gray-900 shadow-lg sticky top-0 z-50 rounded-b-xl mx-2 mt-2">
+        <nav class="container mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center">
+            <!-- Your logo is now integrated here -->
+            <img src="http://googleusercontent.com/file_content/1" alt="REC Inspections Logo" class="h-10 transition-transform duration-300 transform hover:scale-105">
+            <div class="mt-4 sm:mt-0 flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6 text-sm font-medium">
+                <a href="#about" class="text-gray-300 hover:text-yellow-400 transition-colors duration-300">About</a>
+                <a href="#services" class="text-gray-300 hover:text-yellow-400 transition-colors duration-300">Services</a>
+                <a href="#recommendations" class="text-gray-300 hover:text-yellow-400 transition-colors duration-300">Recommendations</a>
+                <a href="#faq" class="text-gray-300 hover:text-yellow-400 transition-colors duration-300">FAQ</a>
+                <a href="#contact" class="text-gray-300 hover:text-yellow-400 transition-colors duration-300">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="bg-gray-900 text-white py-16 sm:py-24 fade-in rounded-3xl mt-6 mx-2">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl sm:text-6xl font-extrabold leading-tight tracking-tight mb-4">
+                Peace of Mind. Built on Solid Foundations.
+            </h1>
+            <p class="text-lg sm:text-xl max-w-2xl mx-auto mb-8">
+                Don't let hidden issues turn your dream home into a nightmare. Our certified inspectors provide thorough, detailed reports so you can buy with confidence.
+            </p>
+            <a href="#contact" class="bg-yellow-400 text-gray-900 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-yellow-500 transition-all duration-300 transform hover:scale-105">
+                Book Your Inspection Today
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 sm:py-24 mx-2">
+        <div class="container mx-auto px-4">
+            <div class="bg-white rounded-3xl shadow-xl p-8 sm:p-12">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 md:pr-12 mb-8 md:mb-0">
+                        <!-- Updated placeholder image to match new dark scheme -->
+                        <img src="https://placehold.co/800x600/1a1a1a/D4AF37?text=Professional+Inspector" alt="Professional Home Inspector at work" class="rounded-2xl shadow-lg transform -rotate-1 transition-transform duration-500 hover:rotate-0">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+                            About REC Inspections
+                        </h2>
+                        <p class="text-gray-700 mb-4 text-lg">
+                            At REC Inspections, we believe that a home inspection is more than just a service—it's about empowering you with knowledge. Our mission is to provide an unbiased, comprehensive evaluation of your property's condition, giving you the clarity needed to make one of the most significant decisions of your life.
+                        </p>
+                        <p class="text-gray-700 text-lg">
+                            Our team of certified and experienced inspectors uses the latest technology to meticulously examine every detail, from the structural integrity to the smallest electrical component. We're dedicated to professionalism, honesty, and your absolute peace of mind.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 sm:py-24 bg-gray-100 mx-2">
+        <div class="container mx-auto px-4">
+            <div class="bg-white rounded-3xl shadow-xl p-8 sm:p-12 text-center">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-12">
+                    Our Comprehensive Inspection Services
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-200 transition-transform transform hover:scale-105 hover:shadow-xl duration-300">
+                        <div class="text-yellow-400 mb-4">
+                             <!-- Inline SVG Icon for Roof -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m0 0l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0h6m-6 0a2 2 0 11-4 0m4 0a2 2 0 104 0M10 16a2 2 0 11-4 0m4 0a2 2 0 104 0m-4 0h6m-6 0v-4m4 4v-4m-4-4h6m-6 0a2 2 0 11-4 0m4 0a2 2 0 104 0" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Full Home Inspection</h3>
+                        <p class="text-gray-600">A top-to-bottom analysis of your property, covering every major system and component.</p>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-200 transition-transform transform hover:scale-105 hover:shadow-xl duration-300">
+                        <div class="text-yellow-400 mb-4">
+                            <!-- Inline SVG Icon for Structure -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m0 0h14m-14 0l-2 2h18l-2-2M13 10V7m0 3v4" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Pre-Listing Inspection</h3>
+                        <p class="text-gray-600">Identify and address potential issues before listing your home to attract more buyers.</p>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-200 transition-transform transform hover:scale-105 hover:shadow-xl duration-300">
+                        <div class="text-yellow-400 mb-4">
+                            <!-- Inline SVG Icon for Electrical -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 11v-1m0 1v4m0 4a2 2 0 01-2 2h-1m3 0a2 2 0 012-2h1m-3 0v-2.5m3 2.5v-2.5m-3 0h6m-6 0a2 2 0 01-2-2h-1m3 0a2 2 0 012 2h1" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">New Construction Inspection</h3>
+                        <p class="text-gray-600">Ensure your new home is built to code and free from defects before you move in.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LLM-Powered Recommendations Section -->
+    <section id="recommendations" class="py-16 sm:py-24 mx-2">
+        <div class="container mx-auto px-4">
+            <div class="bg-gray-900 text-white rounded-3xl shadow-xl p-8 sm:p-12">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center mb-6">
+                    ✨ Get Personalized Inspection Tips
+                </h2>
+                <p class="text-lg text-center mb-8 max-w-2xl mx-auto">
+                    Describe the property you are interested in, and our AI will provide personalized tips and suggest the best inspection service for your needs.
+                </p>
+                <div class="space-y-6 max-w-3xl mx-auto">
+                    <textarea id="property-description" name="property-description" rows="5" placeholder="e.g., 'I am buying a 1950s two-story home with a crawl space and an old electrical panel.' or 'I am a first-time homebuyer interested in a brand new condo.'" required class="w-full px-5 py-3 rounded-2xl border-2 border-gray-700 text-gray-900 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition-all duration-300 resize-none"></textarea>
+                    <button id="get-recommendations-btn" class="w-full bg-yellow-400 text-gray-900 font-bold py-4 rounded-full shadow-lg hover:bg-yellow-500 transition-all duration-300 transform hover:scale-105">
+                        Get Your Personalized Recommendations
+                    </button>
+                    <div id="recommendations-output" class="mt-8 p-6 bg-white rounded-2xl text-gray-900 hidden">
+                        <p class="text-lg font-semibold mb-2">Recommendations:</p>
+                        <div id="recommendations-content" class="text-gray-700"></div>
+                        <div id="loading-recommendations" class="text-center text-gray-500 mt-4 hidden">
+                            <div class="flex items-center justify-center">
+                                <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                </svg>
+                                Generating recommendations...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 sm:py-24 mx-2">
+        <div class="container mx-auto px-4">
+            <div class="bg-white rounded-3xl shadow-xl p-8 sm:p-12">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 text-center mb-12">
+                    Frequently Asked Questions
+                </h2>
+                <div class="space-y-6 max-w-3xl mx-auto">
+                    <!-- FAQ Item 1 -->
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                            What is a home inspection?
+                        </h3>
+                        <p class="text-gray-600">
+                            A home inspection is a non-invasive, visual examination of a property's physical structure and systems. It's a professional assessment to identify major defects or safety concerns.
+                        </p>
+                        <button class="expand-faq-btn mt-4 bg-gray-200 text-gray-800 text-sm font-semibold py-2 px-4 rounded-full hover:bg-gray-300 transition-colors duration-300">
+                            ✨ Expand Answer
+                        </button>
+                    </div>
+                    <!-- FAQ Item 2 -->
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                            How long does an inspection take?
+                        </h3>
+                        <p class="text-gray-600">
+                            The time varies based on the size and age of the home, but a typical inspection for a standard-sized home takes between 2 to 3 hours.
+                        </p>
+                        <button class="expand-faq-btn mt-4 bg-gray-200 text-gray-800 text-sm font-semibold py-2 px-4 rounded-full hover:bg-gray-300 transition-colors duration-300">
+                            ✨ Expand Answer
+                        </button>
+                    </div>
+                    <!-- FAQ Item 3 -->
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                            Should I attend the inspection?
+                        </h3>
+                        <p class="text-gray-600">
+                            We strongly encourage you to be present. It's an excellent opportunity to ask questions, understand the home's systems, and see any issues firsthand.
+                        </p>
+                        <button class="expand-faq-btn mt-4 bg-gray-200 text-gray-800 text-sm font-semibold py-2 px-4 rounded-full hover:bg-gray-300 transition-colors duration-300">
+                            ✨ Expand Answer
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 sm:py-24 bg-gray-900 text-white mx-2 rounded-3xl mb-6">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+                Ready to Schedule Your Inspection?
+            </h2>
+            <p class="text-lg mb-8 max-w-2xl mx-auto">
+                Fill out the form below or give us a call to get a free, no-obligation quote. Let's ensure your new home is a sound investment.
+            </p>
+            <div class="bg-white p-8 sm:p-12 rounded-2xl shadow-lg max-w-xl mx-auto">
+                <form class="space-y-6 text-gray-800">
+                    <div>
+                        <input type="text" id="name" name="name" placeholder="Full Name" required class="w-full px-5 py-3 rounded-full border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition-all duration-300">
+                    </div>
+                    <div>
+                        <input type="email" id="email" name="email" placeholder="Email Address" required class="w-full px-5 py-3 rounded-full border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition-all duration-300">
+                    </div>
+                    <div>
+                        <input type="tel" id="phone" name="phone" placeholder="Phone Number" class="w-full px-5 py-3 rounded-full border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition-all duration-300">
+                    </div>
+                    <div>
+                        <textarea id="message" name="message" rows="4" placeholder="Your Message" required class="w-full px-5 py-3 rounded-2xl border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition-all duration-300 resize-none"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-yellow-400 text-gray-900 font-bold py-4 rounded-full shadow-lg hover:bg-yellow-500 transition-all duration-300 transform hover:scale-105">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-6 text-center text-gray-500 text-sm mx-2 mb-2 rounded-xl shadow-lg">
+        <p>&copy; 2024 REC Inspections. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript for Gemini API interactions
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const getRecommendationsBtn = document.getElementById('get-recommendations-btn');
+            const propertyDescription = document.getElementById('property-description');
+            const recommendationsOutput = document.getElementById('recommendations-output');
+            const recommendationsContent = document.getElementById('recommendations-content');
+            const loadingRecommendations = document.getElementById('loading-recommendations');
+            const faqButtons = document.querySelectorAll('.expand-faq-btn');
+
+            // Function to handle the recommendations generation
+            getRecommendationsBtn.addEventListener('click', async () => {
+                const promptText = propertyDescription.value;
+                if (promptText.trim() === '') {
+                    // Use a message box for a non-disruptive alert.
+                    displayMessage('Please enter a description of the property to get recommendations.', 'error');
+                    return;
+                }
+
+                recommendationsOutput.classList.remove('hidden');
+                recommendationsContent.innerHTML = '';
+                loadingRecommendations.classList.remove('hidden');
+
+                const prompt = `You are a helpful and professional home inspection assistant. Based on the following property description, provide key inspection tips and recommend the most suitable inspection service from the following options: "Full Home Inspection", "Pre-Listing Inspection", or "New Construction Inspection". Be friendly and encouraging.
+
+                Property Description: "${promptText}"
+
+                Please provide a response that is helpful to a potential client. Use markdown for formatting.`;
+
+                try {
+                    const apiKey = "";
+                    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+                    
+                    const payload = {
+                        contents: [{
+                            parts: [{
+                                text: prompt
+                            }]
+                        }]
+                    };
+
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(payload)
+                    });
+
+                    if (!response.ok) {
+                        throw new Error(`API call failed with status: ${response.status}`);
+                    }
+                    const result = await response.json();
+                    
+                    const generatedText = result?.candidates?.[0]?.content?.parts?.[0]?.text;
+                    if (generatedText) {
+                        recommendationsContent.innerHTML = generatedText.replace(/\n/g, '<br>'); // Display markdown-formatted text
+                    } else {
+                        recommendationsContent.textContent = "Sorry, I couldn't generate recommendations at this time. Please try again.";
+                    }
+
+                } catch (error) {
+                    console.error("Error generating recommendations:", error);
+                    recommendationsContent.textContent = "There was an error generating your recommendations. Please try again later.";
+                } finally {
+                    loadingRecommendations.classList.add('hidden');
+                }
+            });
+
+            // Function to handle the FAQ expansion
+            faqButtons.forEach(button => {
+                button.addEventListener('click', async (event) => {
+                    const parentDiv = event.target.closest('div');
+                    const question = parentDiv.querySelector('h3').textContent;
+                    const existingContent = parentDiv.querySelector('p').textContent;
+
+                    const expandedContentDiv = document.createElement('div');
+                    expandedContentDiv.className = 'mt-4 p-4 bg-gray-100 rounded-xl';
+                    expandedContentDiv.innerHTML = `
+                        <p class="font-semibold mb-2">Detailed Answer:</p>
+                        <div class="faq-content"></div>
+                        <div class="text-center text-gray-500 mt-2">
+                            <div class="flex items-center justify-center">
+                                <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                </svg>
+                                Generating expanded answer...
+                            </div>
+                        </div>
+                    `;
+
+                    parentDiv.appendChild(expandedContentDiv);
+                    event.target.style.display = 'none';
+
+                    const faqContentDiv = expandedContentDiv.querySelector('.faq-content');
+                    const loadingFaq = expandedContentDiv.querySelector('.text-center');
+
+                    const prompt = `You are a knowledgeable and professional home inspection expert. Take the following question and its current short answer, and provide a much more detailed and comprehensive explanation. Expand on the topic to provide valuable insights for a homebuyer.
+
+                    Question: "${question}"
+                    Current Answer: "${existingContent}"
+
+                    Please provide a thorough, well-structured response that is easy to read. Use markdown for formatting.`;
+
+                    try {
+                        const apiKey = "";
+                        const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+                        
+                        const payload = {
+                            contents: [{
+                                parts: [{
+                                    text: prompt
+                                }]
+                            }]
+                        };
+
+                        const response = await fetch(apiUrl, {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify(payload)
+                        });
+
+                        if (!response.ok) {
+                            throw new Error(`API call failed with status: ${response.status}`);
+                        }
+                        const result = await response.json();
+                        
+                        const generatedText = result?.candidates?.[0]?.content?.parts?.[0]?.text;
+                        if (generatedText) {
+                            faqContentDiv.innerHTML = generatedText.replace(/\n/g, '<br>');
+                        } else {
+                            faqContentDiv.textContent = "Sorry, I couldn't provide a detailed answer at this time.";
+                        }
+                    } catch (error) {
+                        console.error("Error expanding FAQ:", error);
+                        faqContentDiv.textContent = "There was an error getting the detailed answer. Please try again later.";
+                    } finally {
+                        loadingFaq.classList.add('hidden');
+                    }
+                });
+            });
+
+            // Generic message box function for non-disruptive alerts
+            function displayMessage(message, type = 'info') {
+                const messageBox = document.createElement('div');
+                messageBox.textContent = message;
+                messageBox.style.cssText = `
+                    position: fixed;
+                    top: 20px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    padding: 1rem 2rem;
+                    border-radius: 9999px;
+                    color: white;
+                    z-index: 1000;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+                    font-weight: bold;
+                `;
+                if (type === 'error') {
+                    messageBox.style.backgroundColor = '#dc2626';
+                } else {
+                    messageBox.style.backgroundColor = '#2563eb';
+                }
+
+                document.body.appendChild(messageBox);
+                setTimeout(() => {
+                    messageBox.style.opacity = '0';
+                    messageBox.style.transform = 'translate(-50%, -20px)';
+                    setTimeout(() => messageBox.remove(), 500);
+                }, 3000);
+            }
+        });
+    </script>
+
+</body>
+</html>
